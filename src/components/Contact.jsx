@@ -3,7 +3,7 @@ import { FaEnvelope, FaMap, FaMapMarked, FaMapMarkedAlt, FaPhone } from 'react-i
 
 const Contact = () => {
   return (
-    <div className='bg-black text-white py-20' id='contact'>
+    <div className='bg-black text-white py-20 border-gray-600' id='contact'>
       <div className='container mx-auto px-8 md:px-16 lg:px-24'>
       <h2 className='text-4xl text-center mb-12 font-bold'>Contact Me</h2>
       <div className='flex flex-col md:flex-row items-center md:space-x-12'>
@@ -41,8 +41,10 @@ const Contact = () => {
               <label htmlFor="message" className='block mb-2'></label>
               <textarea type="text" className='w-full p-2  bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400 ' rows="5" placeholder='Enter Your Message' />
             </div>
-             <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
+            <div className='flex justify-center md:justify-start'>
+             <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white 
             transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full'>Send</button>
+            </div>
          </form>
       </div>
       </div>

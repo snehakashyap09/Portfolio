@@ -15,7 +15,8 @@ const Navbar = () => {
    </div>
 
    <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline rounded-full transform transition-transform duration-300 hover:scale-105 px-4 py-2'>
-   Contact Me
+    <a href="https://github.com/snehakashyap09" target="blank">GitHub Profile</a>
+  
    </button>
 
    </div>

@@ -3,7 +3,7 @@ import AboutImage from "../assets/profile.jpg";
 
 const Home = () => {
   return (
-    <div className="bg-black text-white py-16 sm:py-20" id="about">
+    <div className="bg-black text-white py-16 sm:py-20 border-b border-gray-600" id="about">
       <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
         
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
@@ -20,7 +20,9 @@ const Home = () => {
             </p>
              
                
-        <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-full px-8 py-3 font-bold'>Check Resume</button>
+        <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-full px-8 py-3 font-bold'>
+          <a href="/snehaResume.pdf" target="_blank">Check Resume</a>
+        </button>
             
           </div>
         </div>
