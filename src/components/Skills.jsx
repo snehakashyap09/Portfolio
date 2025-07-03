@@ -9,21 +9,21 @@ const skills = [
   {
     title: "Frontend",
     tech: [
-      { name: "HTML", icon: <FaHtml5 className="h-6 w-6 text-orange-500" /> },
-      { name: "CSS", icon: <FaCss3Alt className="h-6 w-6 text-blue-500" /> },
-      { name: "JavaScript", icon: <FaJs className="h-6 w-6 text-yellow-400" /> },
-      { name: "React", icon: <FaReact className="h-6 w-6 text-cyan-400" /> },
-      { name: "Tailwind", icon: <SiTailwindcss className="h-6 w-6 text-teal-400" /> },
+      { name: "HTML", icon: <FaHtml5 className=" text-orange-500" /> },
+      { name: "CSS", icon: <FaCss3Alt className=" text-blue-500" /> },
+      { name: "JavaScript", icon: <FaJs className=" text-yellow-400" /> },
+      { name: "React", icon: <FaReact className=" text-cyan-400" /> },
+      { name: "Tailwind", icon: <SiTailwindcss className=" text-teal-400" /> },
     ],
   },
   {
     title: "Backend",
     tech: [
-      { name: "Node.js", icon: <FaNode className="h-6 w-6 text-green-500" /> },
-      { name: "Express.js", icon: <SiExpress className="h-6 w-6 text-white" /> },
-      { name: "MongoDB", icon: <SiMongodb className="h-6 w-6 text-green-600" /> },
-      { name: "MySQL", icon: <SiMysql className="h-6 w-6 text-blue-400" /> },
-      { name: "Python", icon: <FaPython className="h-6 w-6 text-yellow-300" /> },
+      { name: "Node.js", icon: <FaNode className=" text-green-500" /> },
+      { name: "Express.js", icon: <SiExpress className=" text-white" /> },
+      { name: "MongoDB", icon: <SiMongodb className=" text-green-600" /> },
+      { name: "MySQL", icon: <SiMysql className=" text-blue-400" /> },
+    { name: "Python", icon: <FaPython className=" text-yellow-300" /> },
     ],
   },
  
@@ -48,10 +48,10 @@ export default function Skills() {
               {skill.tech.map((tech, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-2  bg-black rounded-lg text-sm hover:bg-gray-700 transition p-2"
+                  className=" text-center flex items-center gap-2  bg-black rounded-lg text-sm hover:bg-gray-700 transition p-0 md:p-2"
                 >
-                  {tech.icon}
-                  <span className="text-md md:text-lg">{tech.name}</span>
+                  <div className="h-3 w-3 md:h-6 md:w-6 pr-1">{tech.icon}</div>
+                  <span className="text-sm md:text-lg">{tech.name}</span>
                 </div>
               ))}
             </div>

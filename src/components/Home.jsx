@@ -21,7 +21,7 @@ const Home = () => {
              
                
         <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-full px-8 py-3 font-bold'>
-          <a href="/snehaResume.pdf" target="_blank">Check Resume</a>
+          <a href="/resume.pdf" target="_blank">Check Resume</a>
         </button>
             
           </div>
